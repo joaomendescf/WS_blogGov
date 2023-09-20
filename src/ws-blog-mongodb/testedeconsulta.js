@@ -4,7 +4,7 @@ const blog = require('./schema-blog')
 const titulo = "Censo 2022 indica que o Brasil totaliza 203 milhões de habitantes"
 // const titulo = "203 milhões de habitantes"
 
-mongoose.connect('mongodb+srv://mendesnr:%40JF159730ana@cluster0-aws.avy9j6m.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://comum:%40comum123456@cluster0-aws.avy9j6m.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser:true,
     useUnifiedTopology:true
     })

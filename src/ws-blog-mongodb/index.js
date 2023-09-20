@@ -3,7 +3,7 @@ const cheerio = require('cheerio')
 const mongoose = require('mongoose')
 const blog = require('./schema-blog')
 
-mongoose.connect('mongodb+srv://mendesnr:%40JF159730ana@cluster0-aws.avy9j6m.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://comum:%40comum123456@cluster0-aws.avy9j6m.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser:true,
     useUnifiedTopology:true
     })
