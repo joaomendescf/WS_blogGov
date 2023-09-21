@@ -2,11 +2,23 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const mysql = require('mysql')
 
+let usuario = ''
+let senha = ''
+
+if(process.env.NODE_ENV !== 'producao'){
+    require('dotenv').config()
+    usuario = process.env.BD_USER
+    senha = process.env.BD_PASS
+}else{
+    usuario = process.env.BD_USER
+    senha = process.env.BD_PASS
+}
+
 const pool = mysql.createPool({
     connectionLimit:30,
     host: 'localhost',
-    user:'comum',
-    password:'123456',
+    user:usuario,
+    password: senha,
     database: 'blog'
 });
 
